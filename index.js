@@ -4,8 +4,8 @@ const morgan = require("morgan");
 const path = require("path");
 const cors = require("cors");
 
-app.use(cors());
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // create a write stream (in append mode)
